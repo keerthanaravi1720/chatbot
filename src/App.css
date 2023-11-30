@@ -1,38 +1,92 @@
-.App {
+.background {
+  color: rgb(220, 211, 211);
+  /* background:linear-gradient(135deg,  #FF6B6B, #FFA07A); */
+  /* background: linear-gradient(45deg, #E1415F, #5B1A1A); */
+  /* background: linear-gradient(135deg, #EF88BB,#291850); */
+  /* background: linear-gradient(135deg, #970D1A, #4E2042); */
+  background: linear-gradient(135deg, #1E2A78, #FF2E4C);
+
+
+ height: 100vh;
+}
+
+/* Change the background color of the default-selected menu item */
+.ant-menu-item.default-selected {
+  /* background-color: #f2df7f;  */
+  background-color: white;
+  color: #343232; /* Text color of the selected item */
+}
+
+/* Change the hover background color of the menu item */
+.ant-menu-item.default-selected:hover {
+  background-color: #fce7f0;
+  color: rgb(67, 64, 64); /* Your desired hover color */
+}
+
+
+
+
+.not-icon-container {
+  
+  /* background: linear-gradient(135deg, #970D1A, #4E2042); */
+  background: linear-gradient(135deg, #1E2A78, #FF2E4C);
+  
+  display: inline-block;
+  padding: 8px; /* Adjust padding as needed */
+  border-radius: 50%; /* To make the container round */
+  margin-top: 10px;
+  margin-left: 65px;
+  transition: box-shadow 0.3s; /* Add transition for the hover effect */
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  
+}
+.not-icon-container:hover {
+  box-shadow: 0px 0px 15px 0px rgba(220, 214, 214, 0.75); /* Increase shadow on hover */
+}
+
+.not-icon {
+  color: #f1eaea; /* Color of the icon within the container */
+  font-size: 18px; /* Adjust font size as needed */
+}
+
+.not{
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: -35px;
   color: white;
+ 
 }
 
-.App-link {
-  color: #61dafb;
+
+/* content */
+
+.content-color{
+  background:rgb(247, 241, 241);
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+/* Default styles for web */
+.ant-layout-sider {
+  width: 200px;
 }
+
+@media (max-width: 768px) {
+  /* Styles for tablets and smaller screens */
+  .ant-layout-sider {
+    width: 100px;
+  }
+
+  /* Adjust other styles for smaller screens */
+}
+
+
+/* 
+@media (max-width: 576px) {
+ 
+  .ant-layout-sider {
+    display: none;
+  }
+
+  
+} */

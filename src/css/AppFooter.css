@@ -1,0 +1,163 @@
+/* .menu-item {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  background-color: black;
+  color: white;
+  height: 50px;
+  
+}
+
+.header-icon {
+  position: relative;
+  font-size: 24px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+.line-above {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  right: 0;
+  border-top: 2px solid #ffffff;
+  
+}
+
+.header-icon.light-on {
+
+  filter: drop-shadow(3px 4px 2px rgb(255 255 255 / 70%));
+
+ 
+ 
+
+
+}
+
+
+.header-icon .tubelight {
+  transition: opacity 0.3s ease;
+}
+
+.header-icon.light-on .tubelight {
+  opacity: 0.5;
+} */
+
+
+
+
+
+/* AppFooter.css */
+/* .menu-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  color: white;
+  margin-top: 100px;
+  height: 50px;
+}
+
+.header-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+
+.light-on {
+  .line-above {
+    opacity: 1;
+  }
+
+  .light-ray {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -40px;
+    left: -20px;
+    clip-path: polygon(5% 100%, 25% 0px, 75% 0px, 95% 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) -50%, rgba(255, 255, 255, 0) 90%);
+  }
+}
+
+
+.line-above {
+  width: 20px;
+  height: 2px;
+  background: #ffffff; 
+  position: absolute;
+  top: -8px;
+  opacity: 0;
+} */
+
+
+
+
+
+
+
+.menu-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  color: white;
+  margin-top: 100px;
+  height: 50px;
+}
+
+.header-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -13px; /* Adjust the top value to create a gap */
+    left: 100%; /* Center the line horizontally */
+    transform: translateX(-50%); /* Center the line horizontally */
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0;
+    transition: opacity 400ms ease;
+    width: 30px;
+  }
+
+  .tubelight {
+    position: relative;
+  }
+
+  .light-ray {
+    position: absolute;
+    top: 50%; /* Center the light ray vertically */
+    left: 50%; /* Center the light ray horizontally */
+    transform: translate(-50%, -50%); /* Center the light ray both vertically and horizontally */
+    width: 200%; /* Increase the width to 200% or your desired value */
+    height: 80px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) -50%, rgba(255, 255, 255, 0) 90%); /* Increase the opacity for a brighter light ray */
+    pointer-events: none;
+    opacity: 0;
+    transition: width 400ms ease, opacity 400ms ease;
+  }
+
+  &.light-on .tubelight {
+    left: 50%;
+  }
+
+  &.light-on .light-ray {
+    opacity: 1;
+  }
+
+  &.light-on::before {
+    opacity: 1;
+  }
+}

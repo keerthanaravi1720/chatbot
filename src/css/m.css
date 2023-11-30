@@ -1,0 +1,196 @@
+.b{
+    width: 200px;
+}
+
+
+/* .card-modal{
+    background: linear-gradient(to bottom, white, rgb(255, 215, 255));
+} */
+
+
+  /* .ant-modal-content{
+    background: linear-gradient(135deg, #1E2A78, #FF2E4C)!important;
+  }
+   */
+
+
+
+   .custom-modal {
+    .ant-modal-content {
+      /* background: linear-gradient(135deg, #1E2A78, #FF2E4C) !important; */
+      background: linear-gradient(135deg, #63acb0, #1d3679);
+      width: 450px;
+    }
+  
+    /* .ant-modal-header {
+      background: linear-gradient(135deg, #1E2A78, #FF2E4C) !important;
+      color: #fff; 
+    } */
+  }
+  
+
+
+  .card-with-glassmorphism {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 25px;
+    border:none;
+    height: 300px;
+  }
+  
+
+  .ant-input {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px); 
+    border: none;
+  }
+
+
+ 
+
+
+   /* m.css */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjust the margin as needed to control the vertical spacing */
+  }
+  
+
+
+/* m.css */
+.glassmorphism-button {
+    /* background: none; */
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+    border: none;
+    /* color: #d9d4d4; */
+    color: #ffffff;
+   
+    /* padding: 8px 16px; */
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 80px;
+    transition: all 0.3s ease-in-out; /* Add a transition for smooth effect */
+  
+    /* Apply box-shadow for the neumorphism effect */
+    /* box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.1),
+                5px 5px 10px rgba(0, 0, 0, 0.1); */
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* On hover, change the button's background color and box-shadow */
+  .glassmorphism-button:hover {
+    background:none; /* Change the background color on hover */
+    color: #1E2A78; /* Change the text color on hover */
+    box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.2),
+                3px 3px 5px rgba(0, 0, 0, 0.2); /* Adjust the box-shadow on hover */
+  }
+  
+  
+  
+  
+
+
+  .ant-btn-primary:hover{
+    background: none !important;
+  }
+
+  /* m.css */
+.anticon svg {
+    fill: #ffffff; /* Set the SVG's fill color to white */
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    transition: all 0.3s ease-in-out; /* Add a transition for smooth effect */
+  
+    /* Apply box-shadow for the neumorphism effect */
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.1),
+                5px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* On hover, change the SVG's color and box-shadow */
+  .anticon svg:hover {
+    fill: #1E2A78; 
+    box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.2),
+                3px 3px 5px rgba(0, 0, 0, 0.2); /* Adjust the box-shadow on hover */
+  }
+
+
+
+  .custom-modal2 {
+    .ant-modal-content {
+      background: #edfcfd; /* Set a flat background color */
+      border: none; /* Remove the border */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Apply a subtle shadow */
+    }
+  }
+  
+
+
+/* #efc2c9 */
+
+/* rgb(205, 212, 243) */
+
+.neumorphic-input {
+    background: #edfcfd;/* Light color for the input background */
+    border: none;
+    border-radius: 10px; 
+    padding: 10px 20px;
+   
+    box-shadow:  -10px -10px 20px  #edfcfd,10px 10px 20px #d9d9d9;
+  border-radius: 10px; 
+  padding: 16px; 
+  height: 30px;
+  /* transition: all 0.2s;
+    transition: background 0.3s, box-shadow 0.3s, color 0.3s; */
+  
+    &:focus {
+      background: #f3f3f3; /* Change the background color on focus */
+    }
+
+   
+  }
+
+
+
+  .neumorphic-input:hover{
+     box-shadow:
+    -5px -5px 10px #ffffff, 
+    5px 5px 10px hsl(0, 0%, 69%), 
+    inset -4px -4px 8px #edfcfd,
+    inset 4px 4px 8px  #dcecf4; 
+  }
+  
+
+
+  
+.button-container1{
+    border-radius: 20px; /* Adjust the border radius to your preference */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+}
+
+  .button-neu {
+    
+    color: rgb(52, 51, 51); /* Text color */
+  
+    border-radius: 10px; /* Adjust the border radius to your preference */
+    cursor: pointer;
+    transition: background 0.3s;
+  
+    &:hover {
+      background: #fff9f9;
+      color: black; /* Change the background color on hover */
+    }
+  }
+  
+
+
+
+  
